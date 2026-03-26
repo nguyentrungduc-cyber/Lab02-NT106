@@ -35,7 +35,6 @@
                 string content = txtFileContent.Text.ToUpper();
                 writer.Write(content);
             } // using sẽ tự động đóng StreamWriter và FileStream sau khi hoàn thành khối lệnh
-
         }
     }
 }
