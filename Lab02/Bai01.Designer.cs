@@ -1,6 +1,6 @@
 ﻿namespace Lab02
 {
-    partial class FrmBai01
+    partial class Bai01
     {
         /// <summary>
         ///  Required designer variable.
@@ -65,7 +65,7 @@
             txtFileContent.Size = new Size(549, 183);
             txtFileContent.TabIndex = 3;
             // 
-            // FrmBai01
+            // Bai01
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -73,7 +73,7 @@
             Controls.Add(txtFileContent);
             Controls.Add(btnWriteFile);
             Controls.Add(btnReadFile);
-            Name = "FrmBai01";
+            Name = "Bai01";
             Text = "Bai01";
             ResumeLayout(false);
             PerformLayout();
