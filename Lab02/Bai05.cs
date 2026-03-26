@@ -16,5 +16,47 @@ namespace Lab02
         {
             InitializeComponent();
         }
+
+        private void listViewFile_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnOpen_Click(object sender, EventArgs e)
+        {
+            listViewFile.Items.Clear();
+            FolderBrowserDialog opf = new FolderBrowserDialog();
+            if (opf.ShowDialog() == DialogResult.OK)
+            {
+
+                string[] pathList = Directory.GetFiles(opf.SelectedPath, "*", SearchOption.AllDirectories);
+                List<FileInfo> ListFileInfo = new List<FileInfo>();
+
+                foreach (string item in pathList)
+                {
+                    ListFileInfo.Add(new FileInfo(item));
+                }
+
+
+                foreach (FileInfo fi in ListFileInfo)
+                {
+                    ListViewItem item = new ListViewItem
+                    {
+                        Text = fi.Name
+                    };
+                    listViewFile.Items.Add(item);
+
+                    ListViewItem.ListViewSubItem kichthuoc = new ListViewItem.ListViewSubItem(item, ((fi.Length)).ToString());
+                    ListViewItem.ListViewSubItem DuoiMoRong = new ListViewItem.ListViewSubItem(item, ((fi.Extension)).ToString());
+                    ListViewItem.ListViewSubItem NgayTao = new ListViewItem.ListViewSubItem(item, ((fi.CreationTime)).ToString());
+                    item.SubItems.Add(kichthuoc);
+                    item.SubItems.Add(DuoiMoRong);
+                    item.SubItems.Add(NgayTao);
+
+                }
+
+            }
+        }
+
     }
 }
