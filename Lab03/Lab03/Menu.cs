@@ -32,5 +32,20 @@ namespace Lab03
                 MessageBox.Show("Lỗi khi mở Bài 1: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btnBai2_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                // Gọi Form TCP_Server của Bài 2
+                TCP_Server tcpServer = new TCP_Server();
+                tcpServer.Show();
+            }
+            catch (Exception ex)
+            {
+                // Xử lý nếu chưa tạo Form TCP_Server hoặc lỗi khởi tạo
+                MessageBox.Show("Lỗi khi mở Bài 2: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
     }
 }

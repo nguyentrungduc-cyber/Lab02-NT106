@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             btnBai1 = new Button();
-            button2 = new Button();
+            btnBai2 = new Button();
             button3 = new Button();
             button4 = new Button();
             SuspendLayout();
@@ -44,14 +44,15 @@
             btnBai1.UseVisualStyleBackColor = true;
             btnBai1.Click += btnBai1_Click;
             // 
-            // button2
+            // btnBai2
             // 
-            button2.Location = new Point(202, 201);
-            button2.Name = "button2";
-            button2.Size = new Size(94, 29);
-            button2.TabIndex = 1;
-            button2.Text = "button2";
-            button2.UseVisualStyleBackColor = true;
+            btnBai2.Location = new Point(202, 201);
+            btnBai2.Name = "btnBai2";
+            btnBai2.Size = new Size(94, 29);
+            btnBai2.TabIndex = 1;
+            btnBai2.Text = "Bài 02";
+            btnBai2.UseVisualStyleBackColor = true;
+            btnBai2.Click += btnBai2_Click;
             // 
             // button3
             // 
@@ -78,7 +79,7 @@
             ClientSize = new Size(800, 450);
             Controls.Add(button4);
             Controls.Add(button3);
-            Controls.Add(button2);
+            Controls.Add(btnBai2);
             Controls.Add(btnBai1);
             Name = "Menu";
             Text = "Menu";
@@ -88,7 +89,7 @@
         #endregion
 
         private Button btnBai1;
-        private Button button2;
+        private Button btnBai2;
         private Button button3;
         private Button button4;
     }
