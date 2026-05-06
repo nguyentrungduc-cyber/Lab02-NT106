@@ -1,4 +1,4 @@
-﻿namespace Lab03
+﻿namespace Lab3
 {
     partial class Bai04
     {
@@ -28,12 +28,63 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Bai04";
+            lbTask4 = new Label();
+            btnClient = new Button();
+            btnServer = new Button();
+            SuspendLayout();
+            // 
+            // lbTask4
+            // 
+            lbTask4.AutoSize = true;
+            lbTask4.Font = new Font("Segoe UI Black", 20F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            lbTask4.Location = new Point(157, 21);
+            lbTask4.Margin = new Padding(2, 0, 2, 0);
+            lbTask4.Name = "lbTask4";
+            lbTask4.Size = new Size(122, 46);
+            lbTask4.TabIndex = 8;
+            lbTask4.Text = "Bài 04";
+            // 
+            // btnClient
+            // 
+            btnClient.Location = new Point(86, 141);
+            btnClient.Margin = new Padding(2, 2, 2, 2);
+            btnClient.Name = "btnClient";
+            btnClient.Size = new Size(254, 34);
+            btnClient.TabIndex = 7;
+            btnClient.Text = "Open new TCP client";
+            btnClient.UseVisualStyleBackColor = true;
+            btnClient.Click += btnClient_Click;
+            // 
+            // btnServer
+            // 
+            btnServer.Location = new Point(86, 93);
+            btnServer.Margin = new Padding(2, 2, 2, 2);
+            btnServer.Name = "btnServer";
+            btnServer.Size = new Size(254, 34);
+            btnServer.TabIndex = 6;
+            btnServer.Text = "Open TCP server";
+            btnServer.UseVisualStyleBackColor = true;
+            btnServer.Click += btnServer_Click;
+            // 
+            // Task4
+            // 
+            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(425, 196);
+            Controls.Add(lbTask4);
+            Controls.Add(btnClient);
+            Controls.Add(btnServer);
+            Margin = new Padding(2, 2, 2, 2);
+            Name = "Task4";
+            Text = "Bài 04";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
+
+        private Label lbTask4;
+        private Button btnClient;
+        private Button btnServer;
     }
 }
