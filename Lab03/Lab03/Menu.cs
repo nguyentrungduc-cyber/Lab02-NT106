@@ -1,5 +1,6 @@
 ﻿using System.Net.Sockets;
 using System.Net;
+using Lab3;
 
 
 namespace Lab03
@@ -52,6 +53,13 @@ namespace Lab03
         {
             frmBai3 Bai03 = new frmBai3();
             Bai03.Show();
+        }
+
+        private void btnBai4_Click(object sender, EventArgs e)
+        {
+            Bai04 task4 = new Bai04();
+            task4.Show();
+
         }
     }
 }

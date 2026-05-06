@@ -8,13 +8,25 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace Lab03
+namespace Lab3
 {
     public partial class Bai04 : Form
     {
         public Bai04()
         {
             InitializeComponent();
+        }
+
+        private void btnServer_Click(object sender, EventArgs e)
+        {
+            Bai04_Server server = new Bai04_Server();
+            server.Show(this);
+        }
+
+        private void btnClient_Click(object sender, EventArgs e)
+        {
+            Bai04_Client client = new Bai04_Client();
+            client.Show(this);
         }
     }
 }
